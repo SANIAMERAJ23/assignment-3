@@ -1,0 +1,48 @@
+/* Reset margin/padding to avoid stacking issues */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #181818;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .action-strip {
+    display: flex;
+    flex-direction: row;     
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 12px 0;
+    width: 600px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    gap: 20px;              
+  }
+  
+  
+  .action {
+    display: flex;
+    
+    align-items: center;
+    gap: 6px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .action:hover {
+    color: #0a66c2;
+  }
+  
+  .action i {
+    font-size: 16px;
+  }
+  
